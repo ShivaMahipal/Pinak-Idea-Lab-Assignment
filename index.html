@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'purple-custom': '#4a148c',
+                        'purple-light': '#7b1fa2',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes rotate360 {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .rotate-on-hover:hover {
+            animation: rotate360 0.5s linear;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-purple-custom to-purple-light text-white">
+    <div id="assignment" class="p-8">
+        <h1 class="text-4xl font-bold mb-8">OUR SERVICES</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden text-purple-custom">
+                <div class="bg-purple-100 p-4">
+                    <svg class="w-12 h-12 mx-auto fill-purple-custom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.5 2C15.8807 2 17 3.11929 17 4.5V5H21.5C21.7761 5 22 5.22386 22 5.5C22 5.77614 21.7761 6 21.5 6H20.2803C20.107 11.2198 19.2971 15.1116 17.9297 17.6185C16.5607 20.1292 14.7838 21.2432 12.9604 21.2432C11.137 21.2432 9.36013 20.1292 7.99105 17.6185C6.62371 15.1116 5.81384 11.2198 5.64051 6H2.5C2.22386 6 2 5.77614 2 5.5C2 5.22386 2.22386 5 2.5 5H7V4.5C7 3.11929 8.11929 2 9.5 2H14.5ZM19.2736 6H4.72644C4.89895 11.0945 5.68871 14.8116 6.97144 17.1517C8.26144 19.5042 9.86515 20.2432 12.9604 20.2432C16.0556 20.2432 17.6593 19.5042 18.9493 17.1517C20.232 14.8116 21.0218 11.0945 21.1943 6H19.2736ZM14.5 3H9.5C8.67157 3 8 3.67157 8 4.5V5H16V4.5C16 3.67157 15.3284 3 14.5 3Z"/></svg>
+                </div>
+                <div class="p-6 text-center rotate-on-hover">
+                    <h2 class="text-xl font-semibold mb-2">Emergency Plumbing Services</h2>
+                    <p class="text-sm mb-4">Our plumbers are ready to go 24/7 for emergencies - including nights, weekends and holidays.</p>
+                    <button class="bg-purple-custom text-white py-2 px-4 rounded hover:bg-purple-light transition-colors">EXPLORE THIS SERVICE</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden text-purple-custom">
+                <div class="bg-purple-100 p-4">
+                    <svg class="w-12 h-12 mx-auto fill-purple-custom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.9999 1.99982C18.7613 1.99982 20.9999 4.23836 20.9999 6.99982V17.9998C20.9999 20.7613 18.7613 22.9998 15.9999 22.9998H7.99986C5.2384 22.9998 2.99986 20.7613 2.99986 17.9998V6.99982C2.99986 4.23836 5.2384 1.99982 7.99986 1.99982H15.9999ZM15.9999 3.49982H7.99986C6.06686 3.49982 4.49986 5.06682 4.49986 6.99982V17.9998C4.49986 19.9328 6.06686 21.4998 7.99986 21.4998H15.9999C17.9329 21.4998 19.4999 19.9328 19.4999 17.9998V6.99982C19.4999 5.06682 17.9329 3.49982 15.9999 3.49982ZM12.0003 17.9998C12.4145 17.9998 12.7503 18.3356 12.7503 18.7498C12.7503 19.1641 12.4145 19.4998 12.0003 19.4998C11.5861 19.4998 11.2503 19.1641 11.2503 18.7498C11.2503 18.3356 11.5861 17.9998 12.0003 17.9998Z"/></svg>
+                </div>
+                <div class="p-6 text-center rotate-on-hover">
+                    <h2 class="text-xl font-semibold mb-2">Plumbing and Drains</h2>
+                    <p class="text-sm mb-4">As the largest plumbing and drain service company, we make thousands of repairs every day.</p>
+                    <button class="bg-purple-custom text-white py-2 px-4 rounded hover:bg-purple-light transition-colors">EXPLORE THIS SERVICE</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden text-purple-custom">
+                <div class="bg-purple-100 p-4">
+                    <svg class="w-12 h-12 mx-auto fill-purple-custom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3.09747L7.05025 8.04722C4.31658 10.7809 4.31658 15.2191 7.05025 17.9528C9.78392 20.6864 14.2161 20.6864 16.9497 17.9528C19.6834 15.2191 19.6834 10.7809 16.9497 8.04722L12 3.09747ZM12 0.269043L18.364 6.63304C21.8787 10.1477 21.8787 15.8523 18.364 19.367C14.8492 22.8816 9.14466 22.8816 5.62996 19.367C2.11527 15.8523 2.11527 10.1477 5.62996 6.63304L12 0.269043ZM12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"/></svg>
+                </div>
+                <div class="p-6 text-center rotate-on-hover">
+                    <h2 class="text-xl font-semibold mb-2">Water Damage</h2>
+                    <p class="text-sm mb-4">Our teams are equipped with state-of-the-art water extraction and cleanup equipment.</p>
+                    <button class="bg-purple-custom text-white py-2 px-4 rounded hover:bg-purple-light transition-colors">EXPLORE THIS SERVICE</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden text-purple-custom">
+                <div class="bg-purple-100 p-4">
+                    <svg class="w-12 h-12 mx-auto fill-purple-custom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7V5C9 3.34315 10.3431 2 12 2C13.6569 2 15 3.34315 15 5V7H16C17.1046 7 18 7.89543 18 9V19C18 20.1046 17.1046 21 16 21H8C6.89543 21 6 20.1046 6 19V9C6 7.89543 6.89543 7 8 7H9ZM8 9H16V19H8V9ZM13 13C13 13.5523 12.5523 14 12 14C11.4477 14 11 13.5523 11 13C11 12.4477 11.4477 12 12 12C12.5523 12 13 12.4477 13 13ZM11 7H13V5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5V7Z"/></svg>
+                </div>
+                <div class="p-6 text-center rotate-on-hover">
+                    <h2 class="text-xl font-semibold mb-2">Water Heaters</h2>
+                    <p class="text-sm mb-4">Trust Roto-Rooter for repair and replacement of gas, electric and tankless water heaters.</p>
+                    <button class="bg-purple-custom text-white py-2 px-4 rounded hover:bg-purple-light transition-colors">EXPLORE THIS SERVICE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
